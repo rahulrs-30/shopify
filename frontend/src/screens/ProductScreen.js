@@ -5,6 +5,7 @@ import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap";
 import products from "../products";
 import Rating from "../components/Rating";
 
+
 const ProductScreen = () => {
   const { id: productId } = useParams();
   const product = products.find((p) => p._id === productId);
@@ -52,7 +53,13 @@ const ProductScreen = () => {
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
-                <Button className="btn-block" type="button" disabled={product.countInStock===0}>
+                <Button className="btn-" type="button"
+                disabled={product.countInStock===0} 
+                style={{
+                    background: "linear-gradient(to right, #3a7bd5, #6937a1)",
+                    color: "white",
+                  }}
+                >
                   Add to Cart
                 </Button>
               </ListGroup.Item>
