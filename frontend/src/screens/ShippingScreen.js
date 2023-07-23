@@ -68,7 +68,7 @@ const ShippingScreen = () => {
                     ></Form.Control>
                 </Form.Group>
                 <Button type="submit" variant= 'primary' className="my-2">
-                    Continue to Payment Method Selection...
+                    Continue to Payment 
                 </Button>
             </Form>
         </FormContainer>
