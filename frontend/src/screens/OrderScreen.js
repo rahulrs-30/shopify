@@ -96,7 +96,7 @@ const OrderScreen = () => {
     try {
       await deliverOrder(orderId);
       refetch();
-      toast.success('Order Delivered');
+      toast.success("Order Delivered");
     } catch (err) {
       toast.error(err?.data?.message || err.message);
     }
@@ -128,11 +128,11 @@ const OrderScreen = () => {
                 {order.shippingAddress.postalCode}
               </p>
               {order.isDelivered ? (
-                <Message variant="success">
+                <Message variant='success'>
                   Delivered on {order.deliveredAt}
                 </Message>
               ) : (
-                <Message variant="danger">Not delivered yet!</Message>
+                <Message variant='danger'>Not Delivered</Message>
               )}
             </ListGroup.Item>
             <ListGroup.Item>
@@ -216,7 +216,6 @@ const OrderScreen = () => {
                 </ListGroup.Item>
               )}
               {loadingDeliver && <Loader />}
-
               {userInfo &&
                 userInfo.isAdmin &&
                 order.isPaid &&
