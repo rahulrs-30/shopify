@@ -11,7 +11,7 @@ const Meta = ({ title, description, keywords }) => {
   )
 }
 Meta.defaultProps = {
-    title: "Welcome to Shopify",
+    title: "Welcome to PixKart",
     description:"Shop with us and get the best deals on products.",
     keywords: "electronics, buy electronics, cheap electronics",
 }; 
