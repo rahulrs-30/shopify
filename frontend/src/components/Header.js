@@ -35,7 +35,7 @@ const Header = () => {
         expand="lg"
         collapseOnSelect
         style={{
-          background: "linear-gradient(to right, #3a7bd5, #6937a1)",
+          background: "linear-gradient(to right, #00BFA5, #6937a1)",
         }}
       >
         <Container>

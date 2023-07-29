@@ -1,9 +1,10 @@
 main {
   min-height: 80vh;
 }
-/* body {
-  background: linear-gradient(to right, #F0E68C, #D2B48C, #9370DB);
-} */
+body {
+  background: #E6E6FA;
+  
+}
 
 .rating span {
   margin: 0.1rem;
